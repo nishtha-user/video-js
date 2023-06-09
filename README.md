@@ -1,27 +1,51 @@
-# VideoJsPlayer
+# Videojs Player
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+ This library was generated with Angular CLI version 15.0.0.
+## How to Use
 
-## Development server
+## Step 1
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Install it
+npm i video-js
+## Step 2
 
-## Code scaffolding
+Import component in any standalone component
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+import { VideoJsComponent } from 'lib-video-js';
 
-## Build
+@Component({
+    standalone: true,
+    imports: [VideoJsComponent]
+})
+## You can use it as follows
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ <lib-video-js
+        [videoUrl] = "videoUrl"
+        [captionList] = "captionList"
+        [volumeEnableByKey] = true
+        [playPauseByKey] = true
+        [fullScreenModeEnable]=true
+        [qualitySelector]=true>
+  </lib-video-js>
 
-## Running unit tests
+## Options
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+videoUrl is an array with option [{url:string,label:'300P'}]
 
-## Running end-to-end tests
+captionList is also an array if you need to provide caption with option [{url: string,lang?: string,label?: string}] with optional key
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+volumeEnableByKey is an optional key by default it is false. It handle volume by arrow up and arrow down
+
+playPauseByKey is also an optional key by default it is false. It handle play pause by space key.
+
+fullScreenModeEnable is an optional key by default it is false. It handle fullscreen  by double click.
+
+qualitySelector is an optional key, by default it is false. It provide feature for quality option with multiple video.
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## LICENSE
+
+The MIT License (MIT). Please see [License File]() for more information.
