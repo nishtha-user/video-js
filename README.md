@@ -76,4 +76,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## LICENSE
 
-The MIT License (MIT). Please see [License File]() for more information.
+The MIT License (MIT). Please see [License File](https://github.com/vc-nishtha/video-js/blob/main/LICENSE) for more information.
