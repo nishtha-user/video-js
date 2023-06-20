@@ -6,12 +6,12 @@
 ## Step 1
 
 Install it
-npm i video-js
+npm i video-js-player
 ## Step 2
 
 Import component in any standalone component
 
-import { VideoJsComponent } from 'lib-video-js';
+import { VideoJsComponent } from 'video-js';
 
 @Component({
     standalone: true,
