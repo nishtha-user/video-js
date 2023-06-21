@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+.shadow-box {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #fff;
+}

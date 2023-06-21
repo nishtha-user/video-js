@@ -5,7 +5,10 @@ Videojs Player is a web video player built from the ground up for an HTML5 world
 
 ## Installation
 
-npm i angular-video-js-player
+```html
+<div class="shadow-box">
+  npm i angular-video-js-player
+</div>
 
 ## Usage
 
