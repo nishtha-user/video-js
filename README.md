@@ -1,15 +1,17 @@
 # Videojs Player
 
 Videojs Player is a web video player built from the ground up for an HTML5 world. It supports HTML5 video and Media Source Extensions, as well as other playback techs like YouTube and Vimeo. It supports video playback on desktops and mobile devices.This library was generated with Angular CLI version 15.0.0.
-## How to Use
+## Getting Started
 
-## Step 1
+## Installation
 
-Install it
 npm i angular-video-js-player
-## Step 2
+
+## Usage
 
 Import component in any standalone component
+
+## Import in your ts file
 
 import { VideoJsComponent } from 'angular-video-js-player';
 
@@ -17,22 +19,25 @@ import { VideoJsComponent } from 'angular-video-js-player';
     standalone: true,
     imports: [VideoJsComponent]
 })
-## You can use it as follows
 
- <lib-video-js
+## Use in html file
+
+<lib-video-js
         [videoUrl] = "videoUrl"
         [captionList] = "captionList"
-        [volumeEnableByKey] = true
-        [playPauseByKey] = true
-        [fullScreenModeEnable]=true
-        [qualitySelector]=true>
+        [volumeEnableByKey] = false
+        [playPauseByKey] = false
+        [fullScreenModeEnable]=false
+        [qualitySelector]=false>
   </lib-video-js>
 
+## Description
 
 videoUrl : It is an array with option [{url:string,label:'300P'}]
 
 captionList: It is an array if you need to provide caption with option [{url: string,lang: string,label: string}] where lang and label are optional key.
-## Methods
+
+## Options
  <table>
     <thead>
       <tr>
