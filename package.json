@@ -1,6 +1,6 @@
 {
-  "name": "video-js-player",
-  "version": "1.0.0",
+  "name": "angular-video-js-player",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",
@@ -35,5 +35,23 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^14.0.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "description": "Videojs Player is a web video player built from the ground up for an HTML5 world. It supports HTML5 video and Media Source Extensions, as well as other playback techs like YouTube and Vimeo. It supports video playback on desktops and mobile devices.This library was generated with Angular CLI version 15.0.0. ## How to Use",
+  "main": "src/public-api.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vc-nishtha/video-js.git"
+  },
+  "keywords": [
+    "npm",
+    "video.js",
+    "video",
+    "player"
+  ],
+  "author": "vc-nishtha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vc-nishtha/video-js/issues"
+  },
+  "homepage": "https://github.com/vc-nishtha/video-js#readme"
 }

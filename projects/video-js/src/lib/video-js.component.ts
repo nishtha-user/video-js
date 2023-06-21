@@ -27,7 +27,7 @@ interface Video {
   standalone: true,
   imports: [NgFor],
   template: `
- <video id="video-player" class="video-js vjs-default-skin">
+ <video id="video-player" class="video-js vjs-default-skin" autoplay="true">
   <source *ngFor="let item of videoUrl" src="{{ item.url }}" type="application/x-mpegURL" [attr.label]="item.label??''" />
   <ng-container *ngFor="let caption of captionList">
     <track kind="captions" src="{{caption.url}}" srclang="{{caption?.lang}}" label="{{caption?.label}}" />

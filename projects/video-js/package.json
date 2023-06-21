@@ -1,5 +1,5 @@
 {
-  "name": "video-js-player",
+  "name": "angular-video-js-player",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^14.0.0",

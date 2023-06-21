@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "video-js-player": {
+    "angular-video-js": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/video-js-player",
+            "outputPath": "dist/angular-video-js",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "video-js-player:build:production"
+              "browserTarget": "angular-video-js:build:production"
             },
             "development": {
-              "browserTarget": "video-js-player:build:development"
+              "browserTarget": "angular-video-js:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "video-js-player:build"
+            "browserTarget": "angular-video-js:build"
           }
         },
         "test": {

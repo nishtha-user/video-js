@@ -1,17 +1,17 @@
 # Videojs Player
 
- This library was generated with Angular CLI version 15.0.0.
+Videojs Player is a web video player built from the ground up for an HTML5 world. It supports HTML5 video and Media Source Extensions, as well as other playback techs like YouTube and Vimeo. It supports video playback on desktops and mobile devices.This library was generated with Angular CLI version 15.0.0.
 ## How to Use
 
 ## Step 1
 
 Install it
-npm i video-js-player
+npm i angular-video-js-player
 ## Step 2
 
 Import component in any standalone component
 
-import { VideoJsComponent } from 'video-js';
+import { VideoJsComponent } from 'angular-video-js-player';
 
 @Component({
     standalone: true,
