@@ -1,11 +1,16 @@
-# Videojs Player
+# Angular Video-js Player
 
-Videojs Player is a web video player built from the ground up for an HTML5 world. It supports HTML5 video and Media Source Extensions, as well as other playback techs like YouTube and Vimeo. It supports video playback on desktops and mobile devices.This library was generated with Angular CLI version 15.0.0.
+A video player called ```Angular Video-js Player``` is utilised by Angular standalone projects. Video playback on PCs and mobile devices is supported, along with Media Source Extensions and HTML5 video. With the help of Angular CLI version 15.0.0, this library was created.
+
+This package has basic video js many features with boolean values that may be customised.
+
 ## Getting Started
 
 ## Installation
 
-npm i angular-video-js-player
+```html
+  npm i angular-video-js-player
+```
 
 ## Usage
 
@@ -13,16 +18,19 @@ Import component in any standalone component
 
 ## Import in your ts file
 
+```html
 import { VideoJsComponent } from 'angular-video-js-player';
 
 @Component({
     standalone: true,
     imports: [VideoJsComponent]
 })
+```
 
 ## Use in html file
 
- <lib-video-js
+```html
+<lib-video-js
         [videoUrl] = "videoUrl"
         [captionList] = "captionList"
         [volumeEnableByKey] = false
@@ -30,12 +38,25 @@ import { VideoJsComponent } from 'angular-video-js-player';
         [fullScreenModeEnable]=false
         [qualitySelector]=false>
   </lib-video-js>
+```
 
 ## Description
 
-videoUrl : It is an array with option [{url:string,label:'300P'}]
+Add this key in your ts file and assign value.
+
+videoUrl : It is an array with option [{url:string,label:string}]
+
+```for example:```
+```html
+videoUrl= [{url:'your-video-url',label:'300P'}]
+```
 
 captionList: It is an array if you need to provide caption with option [{url: string,lang: string,label: string}] where lang and label are optional key.
+
+```for example:```
+```html
+captionList= [{url:'your-caption-url',lang:'en',label:'English'}]
+```
 
 ## Options
  <table>
