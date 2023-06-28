@@ -96,6 +96,14 @@ captionList= [{url:'your-caption-url',lang:'en',label:'English'}]
     </tbody>
   </table>
 
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Credits
+
+- [All Contributors](../../contributors)
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
