@@ -102,7 +102,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 ## Credits
 
-- [All Contributors](../../contributors)
+- [All Contributors](https://github.com/vc-nishtha/video-js/graphs/contributors)
 
 ## Further help
 
