@@ -1,8 +1,8 @@
 # Angular Video-js Player
 
-A video player called ```Angular Video-js Player``` is utilised by ```Angular standalone projects```. Video playback on PCs and mobile devices is supported, along with Media Source Extensions and HTML5 video. With the help of Angular CLI version 15.0.0, this library was created.
+A video player called `Angular Video-js Player` is utilized by `Angular standalone projects`. Video playback on PCs and mobile devices is supported, along with Media Source Extensions and HTML5 video. With the help of Angular CLI version 15.0.0, this library was created.
 
-This package has basic video js many features with boolean values that may be customised.
+This package has basic video js many features with boolean values that may be customized.
 
 ## Getting Started
 
@@ -95,6 +95,14 @@ captionList= [{url:'your-caption-url',lang:'en',label:'English'}]
         </tr>
     </tbody>
   </table>
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
+## Credits
+
+- [All Contributors](https://github.com/vc-nishtha/video-js/graphs/contributors)
 
 ## Further help
 

@@ -34,8 +34,7 @@ interface Video {
   </ng-container>
  </video>
   `,
-  styles: [
-  ]
+  styles: []
 })
 
 export class VideoJsComponent implements OnDestroy {
@@ -48,6 +47,7 @@ export class VideoJsComponent implements OnDestroy {
   @Input() qualitySelector!: boolean;
   qualitySelectorUrl = 'https://unpkg.com/@silvermine/videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js';
   videoJsUrl = 'https://vjs.zencdn.net/7.12.3/video.min.js';
+  setTimer: any;
 
   constructor() {
     this.loadScript();
@@ -67,7 +67,9 @@ export class VideoJsComponent implements OnDestroy {
     const vjs = this.videoJsUrl;
     this.createScript(vjs, () => {
       this.createScript(this.qualitySelectorUrl);
-      this.onPlayVideo();
+      this.setTimer = setTimeout(() => {
+        this.onPlayVideo();
+      }, 300)
     });
   }
 
@@ -127,6 +129,7 @@ export class VideoJsComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.player.dispose();
+    clearTimeout(this.setTimer);
   }
 
 }
