@@ -34,20 +34,7 @@ interface Video {
   </ng-container>
  </video>
   `,
-  styles: [
-    `
-    .video-js {
-      width: 100%;
-      height: 30%;
-
-      video {
-      width: 100%;
-      height: 100%;
-      position: static;
-    }
-    }
-    `
-  ]
+  styles: []
 })
 
 export class VideoJsComponent implements OnDestroy {
